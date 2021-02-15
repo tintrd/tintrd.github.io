@@ -1,0 +1,302 @@
+<!-- https://codepen.io/bbx/pen/Jxoqdg -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuclear Researcher Finder (desktop)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="big-container">
+    <header>
+      <h1>Nuclear Researcher Finder | ค้นหานักวิจัยนิวเคลียร์</h1>
+    </header>
+    <div class="categoryContainer" id="categoryContainer">
+      <button class="btn showall active" onclick="filterSelect('all')">All</button><br />
+      <button class="btn" onclick="filterSelect('material')">
+        วัสดุศาสตร์
+      </button>
+      <button class="btn" onclick="filterSelect('agrifood')">
+        เกษตรและอาหาร
+      </button>
+      <button class="btn" onclick="filterSelect('envi')">สิ่งแวดล้อม</button>
+    </div>
+    <!-- materials -->
+    <div class="container">
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=923"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/02/Kay-Kasinee.jpg" /></a>
+        <div class="card__head">เกศินี เหมวิเชียร</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=951"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/47.jpg" /></a>
+        <div class="card__head">วิราณี ศรีเวียง</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=1044"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/sarinrat161983-680x1024-%E0%B8%95%E0%B8%B1%E0%B8%94.jpg" /></a>
+        <div class="card__head">ศรินรัตน์ วงษ์ลี</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=907"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/02/ie.jpg" /></a>
+        <div class="card__head">พิมพ์พร อุทยารัตน์</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=2059"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/woman_silh.png" /></a>
+        <div class="card__head">พิริญา แก้วพุกัม</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=2734"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2021/02/20190204_081740-%E0%B8%94%E0%B8%B8%E0%B8%A9%E0%B8%8E%E0%B8%B5-%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0.jpg" /></a>
+        <div class="card__head">ดุษฎี รัตนพระ</div>
+      </div>
+    </div>
+    <!-- material -->
+    <div class="container">
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=3650"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/woman_silh.png" /></a>
+        <div class="card__head">ธีรนันท์ แตงทอง</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=953"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B9%892_cut.jpg" /></a>
+        <div class="card__head">ศริญญา วงษ์สนิท</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=929"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/27.jpg" /></a>
+        <div class="card__head">ศศิกานต์ นุชแดง</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=901"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2021/02/thitirat2020-777x1024.jpg" /></a>
+        <div class="card__head">ฐิติรัตน์ รัตนวงษ์วิบูลย์</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=931"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/126858766_209288900767967_7549263750805592090_n-Pattra-Lertsarawut.jpg" /></a>
+        <div class="card__head">ภัทรา เลิศศราวุธ</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=931"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/off-cut.jpg" /></a>
+        <div class="card__head">วีระวัฒน์ พรรุ่งเรืองโชค</div>
+      </div>
+    </div>
+    <!-- material -->
+    <div class="container">
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=3236"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/02/177726_437743419593971_1095803560_o-Tanagorn-kwamman.jpg" /></a>
+        <div class="card__head">ธนกร ความหมั่น</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=2839"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2019/12/rattanakorn142-300x244.jpg" /></a>
+        <div class="card__head">รัตนากรณ์ เชียงหนุ้น</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=3274"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/02/wilasinee_k.jpg" /></a>
+        <div class="card__head">วิลาสินี กิ่งก้ำ</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=4401"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/08/theeraphat_chutimasakul.png" /></a>
+        <div class="card__head">ธีรพัชร์ ชุติมาสกุล</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=4399"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/08/Sakchai-Laksee-813x1024.jpg" /></a>
+        <div class="card__head">ศักดิ์ชัย หลักสี</div>
+      </div>
+      <div class="card material">
+        <a href="https://rdd.tint.or.th/?page_id=4539"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/IMG_20181012_114757-Piyanud-Nud-768x1024.jpg" /></a>
+        <div class="card__head">ปิยะนุช ทองเจิม</div>
+      </div>
+    </div>
+    <!-- agrifoods -->
+    <div class="container">
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=1825"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B8%93%E0%B8%B4%E0%B8%8A.jpg" /></a>
+        <div class="card__head">วณิช ลิ่มโอภาสมณี</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=917"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B1%E0%B8%A2_cut-795x1024.jpg" /></a>
+        <div class="card__head">วิชัย ภูริปัญญวานิช</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=939"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/rdd_valentine_2016_084-%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B5-1.jpg" /></a>
+        <div class="card__head">วรรณี ศรีนุตตระกูล</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=2633"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/woman_silh.png" /></a>
+        <div class="card__head">ฐิติมา คงรัตน์อาภรณ์</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=919"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/2-Mar-2017-Rayong_200621_0020_cut.jpg" /></a>
+        <div class="card__head">จารุรัตน์ เอี่ยมศิริ</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=947"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/36.jpg" /></a>
+        <div class="card__head">ปัญชลี ประคองศิลป์</div>
+      </div>
+    </div>
+    <!-- agrifoods -->
+    <div class="container">
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=2637"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/thod1.jpg" /></a>
+        <div class="card__head">ทศพล แทนรินทร์</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=921"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/rdd_valentine_2016_%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C2.jpg" /></a>
+        <div class="card__head">สุรศักดิ์ สัจจบุตร</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=909"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B9%82%E0%B8%AD%E0%B9%8B2.jpg" /></a>
+        <div class="card__head">วชิราภรณ์ ผิวล่อง</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=2555"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%88%E0%B8%B4%E0%B9%8B%E0%B8%A7_cut-762x1024.jpg" /></a>
+        <div class="card__head">ศิริลักษณ์ ชูแก้ว</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=3253"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%81%E0%B8%B8%E0%B9%89%E0%B8%87.jpg" /></a>
+        <div class="card__head">สุภลักษณ์ คงศรี</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=842"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B9%80%E0%B8%AD-1-830x1024.jpg" /></a>
+        <div class="card__head">ปิยนุช อ้อพงษ์</div>
+      </div>
+    </div>
+    <!-- agrifoods -->
+    <div class="container">
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=3646"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B4%E0%B8%90-714x1024.jpg" /></a>
+        <div class="card__head">ชัญภักต์ คูคู่สมุทร</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=2641"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/08/lamai.jpg" /></a>
+        <div class="card__head">ละมัย ใหม่แก้ว</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=897"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/vararas_jan2020.jpg" /></a>
+        <div class="card__head">วรารัตน์ คำหวาน</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=2555"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/pgift.jpg" /></a>
+        <div class="card__head">เขมรุจิ เข็มทอง</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=3395"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/woman_silh.png" /></a>
+        <div class="card__head">มยุรี ลิมติยะโยธิน</div>
+      </div>
+      <div class="card agrifood">
+        <a href="https://rdd.tint.or.th/?page_id=3871"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/1-Phitchan-Sricharoen.jpg" /></a>
+        <div class="card__head">พิชญ์ชาญ ศรีเจริญ</div>
+      </div>
+    </div>
+    <!-- envi -->
+    <div class="container">
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=2732"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/woman_silh.png" /></a>
+        <div class="card__head">อุทัยวรรณ อินทร์เจริญ</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=935"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/32.jpg" /></a>
+        <div class="card__head">เกียรติพงษ์ คำดี</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=899"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/rdd_valentine_2016_085-%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2.jpg" /></a>
+        <div class="card__head">พชิรารัฐ โสลา</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=3648"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/man_silh.png" /></a>
+        <div class="card__head">มณฑล ยงค์ประวัติ</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=943"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2021/02/20210204_123332d.jpg" /></a>
+        <div class="card__head">ศศิพันธุ์ คะวีรัตน์</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=3643"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/11/man_silh.png" /></a>
+        <div class="card__head">วุฒิไกร กุลสวัสดิ์</div>
+      </div>
+    </div>
+    <!-- envi -->
+    <div class="container">
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=941"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/Pfluke_cut.jpg" /></a>
+        <div class="card__head">จักรกฤช แสงกรกฎ</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=927"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/06/%E0%B8%9A%E0%B8%B2%E0%B8%AA_cut2.jpg" /></a>
+        <div class="card__head">วศิน เวชกามา</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=960"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/29.jpg" /></a>
+        <div class="card__head">เฉลิมพงษ์ โพธิ์ลี้</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=911"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/6.jpg" /></a>
+        <div class="card__head">พัชฎา โนจิตต์</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=969"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2018/01/15.jpg" /></a>
+        <div class="card__head">ฤทธิรอน สำราญ</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=989"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B2%E0%B8%A5%E0%B9%8C%E0%B8%A12.jpg" /></a>
+        <div class="card__head">นิชธิมา เอื้อพูนผล</div>
+      </div>
+      <div class="card envi">
+        <a href="https://rdd.tint.or.th/?page_id=967"><img
+            src="https://rdd.tint.or.th/wp-content/uploads/2020/07/%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-1.jpg" /></a>
+        <div class="card__head">พัชรียา จันทร์เรือง</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
