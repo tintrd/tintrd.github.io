@@ -2,4 +2,4 @@
 
 R&D website stuff
 
-* Nuclear Researcher Finder: [desktop](./expert-finder-desktop/index.html) | [mobile](./expert-finder-mobile/index.html)
+* Nuclear Researcher Finder: [desktop](https://tintrd.github.io/expert-finder-desktop/) | [mobile](https://tintrd.github.io/expert-finder-mobile/)
