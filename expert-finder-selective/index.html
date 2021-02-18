@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuclear Researcher Finder (mobile)</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pridi&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <div class="expertFinderDiv">
+      <header>
+        <h1>Nuclear Researcher Finder</h1>
+        <h2>ค้นหานักวิจัยนิวเคลียร์</h2>
+      </header>
+
+      <div class="categoryContainer" id="categoryContainer">
+        <button class="btn showall active" onclick="nefFilterSelect('all')">
+          Show all</button><br />
+        <button class="btn" onclick="nefFilterSelect('agri')">
+          Agriculture
+        </button>
+        <button class="btn" onclick="nefFilterSelect('arch')">
+          Archaeology
+        </button>
+        <button class="btn" onclick="nefFilterSelect('beam')">
+          Beam
+        </button>
+        <button class="btn" onclick="nefFilterSelect('ener')">Energy</button>
+        <button class="btn" onclick="nefFilterSelect('envi')">
+          Environment
+        </button>
+        <button class="btn" onclick="nefFilterSelect('food')">
+          Food
+        </button>
+        <button class="btn" onclick="nefFilterSelect('hlth')">
+          Health
+        </button>
+        <button class="btn" onclick="nefFilterSelect('mate')">
+          Material
+        </button>
+      </div>
+
+      <div class="rsrchrContainer">
+        <!-- nuclear research section -->
+        <a href="https://rdd.tint.or.th/?page_id=2732">
+          <div class="rsrchrDiv envi">
+            อุทัยวรรณ อินทร์เจริญ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=923">
+          <div class="rsrchrDiv mate">
+            เกศินี เหมวิเชียร
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=939">
+          <div class="rsrchrDiv food">
+            วรรณี ศรีนุตตระกูล
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=1044">
+          <div class="rsrchrDiv arch beam">
+            ศรินรัตน์ วงษ์ลี
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2734">
+          <div class="rsrchrDiv ener envi mate">
+            ดุษฎี รัตนพระ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3643">
+          <div class="rsrchrDiv envi">
+            วุฒิไกร กุลสวัสดิ์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3253">
+          <div class="rsrchrDiv food">
+            สุภลักษณ์ คงศรี
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=929">
+          <div class="rsrchrDiv ener envi mate">
+            ศศิกานต์ นุชแดง
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=901">
+          <div class="rsrchrDiv mate hlth">
+            ฐิติรัตน์ รัตนวงษ์วิบูลย์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=842">
+          <div class="rsrchrDiv agri hlth">
+            ปิยนุช อ้อพงษ์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3646">
+          <div class="rsrchrDiv food">
+            ชัญภักต์ คูคู่สมุทร
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=927">
+          <div class="rsrchrDiv ener">
+            วศิน เวชกามา
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=931">
+          <div class="rsrchrDiv mate">
+            ภัทรา เลิศศราวุธ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=955">
+          <div class="rsrchrDiv beam">
+            วีระวัฒน์ พรรุ่งเรืองโชค
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3236">
+          <div class="rsrchrDiv mate ener">
+            ธนกร ความหมั่น
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3274">
+          <div class="rsrchrDiv ener mate">
+            วิลาสินี กิ่งก้ำ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3871">
+          <div class="rsrchrDiv food">
+            พิชญ์ชาญ ศรีเจริญ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=4401">
+          <div class="rsrchrDiv mate">
+            ธีรพัชร์ ชุติมาสกุล
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=4399">
+          <div class="rsrchrDiv mate hlth">
+            ศักดิ์ชัย หลักสี
+          </div>
+        </a>
+        <!-- development of innovation section -->
+        <a href="https://rdd.tint.or.th/?page_id=1825">
+          <div class="rsrchrDiv agri food">
+            วณิช ลิ่มโอภาสมณี
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=917">
+          <div class="rsrchrDiv agri">
+            วิชัย ภูริปัญญวานิช
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2633">
+          <div class="rsrchrDiv agri food">
+            ฐิติมา คงรัตน์อาภรณ์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=919">
+          <div class="rsrchrDiv food hlth">
+            จารุรัตน์ เอี่ยมศิริ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=951">
+          <div class="rsrchrDiv food hlth">
+            วิราณี ศรีเวียง
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=935">
+          <div class="rsrchrDiv envi food">
+            เกียรติพงษ์ คำดี
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=947">
+          <div class="rsrchrDiv food">
+            ปัญชลี ประคองศิลป์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2637">
+          <div class="rsrchrDiv agri">
+            ทศพล แทนรินทร์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=907">
+          <div class="rsrchrDiv hlth mate">
+            พิมพ์พร อุทยารัตน์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=921">
+          <div class="rsrchrDiv food">
+            สุรศักดิ์ สัจจบุตร
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=909">
+          <div class="rsrchrDiv food">
+            วชิราภรณ์ ผิวล่อง
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=899">
+          <div class="rsrchrDiv envi">
+            พชิรารัฐ โสลา
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2059">
+          <div class="rsrchrDiv hlth">
+            พิริญา แก้วพุกัม
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3648">
+          <div class="rsrchrDiv envi">
+            มณฑล ยงค์ประวัติ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3650">
+          <div class="rsrchrDiv mate">
+            ธีรนันท์ แตงทอง
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=943">
+          <div class="rsrchrDiv arch envi">
+            ศศิพันธุ์ คะวีรัตน์
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=953">
+          <div class="rsrchrDiv hlth">
+            ศริญญา วงษ์สนิท
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2555">
+          <div class="rsrchrDiv food">
+            ศิริลักษณ์ ชูแก้ว
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=941">
+          <div class="rsrchrDiv arch envi food">
+            จักรกฤช แสงกรกฎ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2641">
+          <div class="rsrchrDiv agri">
+            ละมัย ใหม่แก้ว
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=960">
+          <div class="rsrchrDiv arch envi">
+            เฉลิมพงษ์ โพธิ์ลี้
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=897">
+          <div class="rsrchrDiv agri">
+            วรารัตน์ คำหวาน
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=969">
+          <div class="rsrchrDiv envi">
+            ฤทธิรอน สำราญ
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=989">
+          <div class="rsrchrDiv arch envi">
+            นิชธิมา เอื้อพูนผล
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=913">
+          <div class="rsrchrDiv food">
+            เขมรุจิ เข็มทอง
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=2839">
+          <div class="rsrchrDiv hlth">
+            รัตนากรณ์ เชียงหนุ้น
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=967">
+          <div class="rsrchrDiv arch envi">
+            พัชรียา จันทร์เรือง
+          </div>
+        </a>
+        <a href="https://rdd.tint.or.th/?page_id=3395">
+          <div class="rsrchrDiv agri">
+            มยุรี ลิมติยะโยธิน
+          </div>
+        </a>
+      </div>
+
+
+      <div class="moreinfo">
+        <button class="btn_info" id="btn_info" onclick="efShowClusterInfo()">
+          more info</button>
+        <div class="cluster_info" id="cluster_info">
+          <ol>
+            <li>
+              เกษตรกรรม (Agriculture): การทำหมันแมลงวันผลไม้
+              การพัฒนาพันธุ์ข้าว พริก ไม้ดอก
+            </li>
+            <li>
+              โบราณคดี (Archaeology): มรดกทางวัฒนธรรม การวิเคราะห์อายุ
+              การสืบค้นแหล่งที่มาโบราณวัตถุ
+            </li>
+            <li>
+              การใช้ลำอนุภาค (Beam): การถ่ายภาพด้วยนิวตรอน
+              การใช้ลำอนุภาคจากเครื่องไซโคลตรอน
+            </li>
+            <li>
+              พลังงาน (Energy): การศึกษาตัวเร่งปฏิกิริยาไบโอดีเซล
+              การประเมินผลกระทบจากอุบัติเหตุโรงไฟฟ้านิวเคลียร์
+            </li>
+            <li>
+              สิ่งแวดล้อม (Environment): การวิเคราะห์น้ำฝน น้ำบาดาล
+              ด้วยเทคนิคไอโซโทปเสถียร การวัดเรดอนในสิ่งแวดล้อม
+            </li>
+            <li>
+              อาหารและสมุนไพร (Food):
+              การตรวจผลการฉายรังสีอาหารและสมุนไพร
+              การวิเคราะห์การปนเปื้อนของเชื้อจุลินทรีย์ สารเจือปน
+              และธาตุองค์ประกอบในอาหาร
+            </li>
+            <li>
+              สุขภาพและเครื่องสำอาง (Health):
+              การใช้ไอโซโทปรังสีวินิจฉัยโรค การพัฒนาผลิตภัณฑ์ทางการแพทย์
+              การพัฒนาเครื่องสำอางโดยกระบวนการทางรังสี
+            </li>
+            <li>
+              วัสดุศาสตร์ (Materials): การพัฒนาโพลิเมอร์ด้วยรังสี
+              การตรวจสอบพลาสติกชีวภาพ
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+  </main>
+
+  <footer>
+    <div id="version_info">
+      Version 1.0 | 31 August 2020<br />
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      TINT R&D. All rights reserved.
+      <br>
+      <img src="https://via.placeholder.com/468x60" alt="">
+    </div>
+  </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
