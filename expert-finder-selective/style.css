@@ -304,13 +304,13 @@ footer {
   background: white;
   background: linear-gradient(
     to right bottom,
-    rgba(247, 221, 221, 0.8),
-    rgba(212, 181, 181, 0.5)
+    rgba(229, 247, 221, 0.8),
+    rgba(182, 212, 181, 0.5)
   );
   position: absolute;
   /* position: fixed; */
   border-radius: 50%;
-  z-index: 3;
+  z-index: 2;
 }
 
 .circle1 {
