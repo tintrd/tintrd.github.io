@@ -1,0 +1,6 @@
+v1
+- it should have a list of all experts
+- there should be a way to filter experts by field
+- there should be links to expert bios/emails
+
+// Based on W3Schools JS tutorial https://www.w3schools.com/howto/howto_js_filter_elements.asp
