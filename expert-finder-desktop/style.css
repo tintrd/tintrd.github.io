@@ -40,11 +40,12 @@ body {
 .container .card {
   flex: 1;
   transition: all 1s ease-in-out;
-  height: 40vmin;
+  height: 60vmin;
   position: relative;
   /* display: none; */
   margin-right: 1em;
   /* transform: skew(5deg); */
+  /* justify-content: center; */
 }
 
 .card {
@@ -67,6 +68,7 @@ body {
   white-space: nowrap;
   /* custom */
   border-radius: 25px;
+  /* justify-content: center; */
 }
 
 .container .card img {
@@ -84,12 +86,6 @@ body {
   margin-right: 1em;
 } */
 
-/* .card__head .cat {
-  background: rgba(85, 185, 231, 0.75);
-}
-.card__head .dog {
-  background: rgba(71, 235, 93, 0.75);
-} */
 .container .card:hover {
   /* flex-grow: 10; */
   flex-grow: 8;
@@ -160,6 +156,45 @@ body {
 }
 
 header {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 20px;
+  text-align: center;
+}
+
+/* for phones */
+@media only screen and (max-width: 720px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    transform: skew(0deg);
+    /* border-style: dashed;
+    border-color: blue; */
+  }
+  .container .card {
+    margin: 10px;
+    /* height: 400px;
+    width: 400px; */
+    /* border-style: solid;
+    border-color: red; */
+  }
+
+  .container .card img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .container .card .card__head {
+    padding: 0;
+    font-size: 1em;
+    min-width: 90%;
+    /* custom */
+    border-radius: 25px;
+  }
+  .container .card:hover .card__head {
+    font-size: 1.3em;
+  }
 }
