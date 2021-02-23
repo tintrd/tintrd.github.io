@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+[lang="th"] {
+  font-family: "Pridi", serif;
+}
+
+[lang="en"] {
+  font-family: "Merriweather", serif;
+}
+
 body {
   background: linear-gradient(
     to right top,
@@ -23,6 +31,12 @@ main {
   /* border-style: solid;
   border-color: pink; */
   z-index: 3;
+}
+
+header {
+  font-size: 1.1rem;
+  padding: 20px;
+  text-align: center;
 }
 
 .expertFinderDiv {
@@ -69,6 +83,7 @@ main {
 .btn {
   border: none;
   outline: none;
+  text-align: center;
   /* padding: 12px 16px; */
   background-color: #e1e1e1;
   color: #333;
@@ -80,7 +95,7 @@ main {
   border-radius: 10px;
   /* z-index: 4; */
   /* font-family: sans-serif; */
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   width: 45%;
 }
 
@@ -206,6 +221,7 @@ and (max-width: 480px) {
 /* unvisited link */
 a:link {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 /* visited link */
@@ -224,6 +240,15 @@ a:active {
   color: rgb(245, 243, 120);
   /* font-weight: bold;
   background-color: rgb(62, 146, 146); */
+}
+
+.divider {
+  width: 300px;
+  height: 2px;
+  background: #666;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
 }
 
 .moreinfo {
@@ -275,10 +300,18 @@ a:active {
   border-width: thin;
 }
 
-header {
-  font-size: 1.1rem;
-  padding: 20px;
+.contact {
+  margin: 20px auto;
+  display: block;
+  background: #333;
+  width: 200px;
+  border-radius: 20px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  z-index: 4;
+  border-style: solid;
 }
 
 footer {
