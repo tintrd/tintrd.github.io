@@ -19,28 +19,29 @@
 
       <div class="categoryContainer" id="categoryContainer">
         <button class="btn showall active" onclick="nefFilterSelect('all')">
-          Show all</button><br />
+          <span lang='en'>Show all</span></button><br />
         <button class="btn" onclick="nefFilterSelect('agri')">
-          Agriculture
+          <span lang='th'>เกษตร</span> <span lang='en'>(Agriculture)</span>
         </button>
         <button class="btn" onclick="nefFilterSelect('arch')">
-          Archaeology
+          <span lang='th'>โบราณคดี</span> <span lang='en'>(Archaeology)</span>
         </button>
         <button class="btn" onclick="nefFilterSelect('beam')">
-          Beam
+          <span lang='th'>ลำอนุภาค</span> <span lang='en'>(Beam)</span>
         </button>
-        <button class="btn" onclick="nefFilterSelect('ener')">Energy</button>
+        <button class="btn" onclick="nefFilterSelect('ener')"><span lang='th'>พลังงาน</span> <span
+            lang='en'>(Energy)</span></button>
         <button class="btn" onclick="nefFilterSelect('envi')">
-          Environment
+          <span lang='th'>สิ่งแวดล้อม</span> <span lang='en'>(Environment)</span>
         </button>
         <button class="btn" onclick="nefFilterSelect('food')">
-          Food
+          <span lang='th'>อาหาร</span> <span lang='en'>(Food)</span>
         </button>
         <button class="btn" onclick="nefFilterSelect('hlth')">
-          Health
+          <span lang='th'>สุขภาพ</span> <span lang='en'>(Health)</span>
         </button>
         <button class="btn" onclick="nefFilterSelect('mate')">
-          Material
+          <span lang='th'>วัสดุศาสตร์</span> <span lang='en'>(Material)</span>
         </button>
       </div>
 
@@ -284,14 +285,14 @@
         </a>
       </div>
 
-
+      <div class="divider"></div>
       <div class="moreinfo">
         <button class="btn_info" id="btn_info" onclick="efShowClusterInfo()">
           more info</button>
         <div class="cluster_info" id="cluster_info">
           <ol>
             <li>
-              เกษตรกรรม (Agriculture): การทำหมันแมลงวันผลไม้
+              เกษตร (Agriculture): การทำหมันแมลงวันผลไม้
               การพัฒนาพันธุ์ข้าว พริก ไม้ดอก
             </li>
             <li>
@@ -299,7 +300,7 @@
               การสืบค้นแหล่งที่มาโบราณวัตถุ
             </li>
             <li>
-              การใช้ลำอนุภาค (Beam): การถ่ายภาพด้วยนิวตรอน
+              ลำอนุภาค (Beam): การถ่ายภาพด้วยนิวตรอน
               การใช้ลำอนุภาคจากเครื่องไซโคลตรอน
             </li>
             <li>
@@ -311,13 +312,13 @@
               ด้วยเทคนิคไอโซโทปเสถียร การวัดเรดอนในสิ่งแวดล้อม
             </li>
             <li>
-              อาหารและสมุนไพร (Food):
+              อาหาร (Food):
               การตรวจผลการฉายรังสีอาหารและสมุนไพร
               การวิเคราะห์การปนเปื้อนของเชื้อจุลินทรีย์ สารเจือปน
               และธาตุองค์ประกอบในอาหาร
             </li>
             <li>
-              สุขภาพและเครื่องสำอาง (Health):
+              สุขภาพ (Health):
               การใช้ไอโซโทปรังสีวินิจฉัยโรค การพัฒนาผลิตภัณฑ์ทางการแพทย์
               การพัฒนาเครื่องสำอางโดยกระบวนการทางรังสี
             </li>
@@ -328,9 +329,15 @@
           </ol>
         </div>
       </div>
+
+      <div class='contact'>
+        <a href="https://rdd.tint.or.th/?page_id=4963"><span lang='th'>ติดต่อเรา</span> <span lang='en'>(contact
+            us)</span></a>
+      </div>
     </div>
-    <div class="circle1"></div>
+    <!-- <div class="circle1"></div> -->
     <!-- <div class="circle2"></div> -->
+
 
   </main>
 
@@ -347,6 +354,7 @@
     </div>
   </footer>
   </div>
+
 
   <script src="index.js"></script>
 </body>
