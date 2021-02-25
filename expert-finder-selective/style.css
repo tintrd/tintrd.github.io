@@ -162,7 +162,6 @@ header {
   border-radius: 15px 25px;
   /* z-index: 4; */
   font-family: "Pridi", serif;
-  /* position: absolute; */
   /* border-style: solid;
   border-color: pink; */
 }
@@ -170,27 +169,35 @@ header {
 /* for desktop */
 @media only screen and (min-width: 800px) {
   .rsrchrContainer {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: inherit;
-    /* justify-content: space-evenly; */
+    /* justify-content: inherit; */
+    justify-content: space-evenly;
   }
   .rsrchrDiv {
-    padding: 5px 10px 5px 10px;
+    /* padding: 5px 10px 5px 10px; */
     margin: 5px 10px;
   }
 }
-/* for phone in portrait mode */
-/* @media only screen 
-and (max-width: 480px) {
-  .rsrchDiv {
-    width: 100%;
-    background: red;
+/* for phone in landscape mode */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+  .rsrchrContainer {
+    /* display: flex; */
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: inherit; */
+    justify-content: space-evenly;
+  }
+  .rsrchrDiv {
+    /* padding: 5px 10px 5px 10px; */
+    margin: 5px 10px;
   }
 }
 
+/*
 @media screen and (max-width: 600px) {
   .rsrchDiv {
     background: #ccc;
