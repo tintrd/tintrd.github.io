@@ -182,7 +182,7 @@ header {
   }
 }
 /* for phone in landscape mode */
-@media only screen and (min-width: 640px) and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   .rsrchrContainer {
     /* display: flex; */
     align-items: center;
