@@ -25,7 +25,7 @@ for (var i = 0; i < btns.length; i++) {
 nefFilterSelect("all");
 
 function nefFilterSelect(c) {
-  var x = document.getElementsByClassName("rsrchrDiv"); // researcher elements
+  var x = document.getElementsByClassName("item"); // researcher elements
   // console.log(c)  // check selected filter
   // console.log(x.length)  // check length of researcher class elements
   if (c == "all") c = ""; // select all

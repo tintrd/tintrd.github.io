@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Pridi&display=swap");
 
+:root {
+  --btn-bgcolor: #90ccf4;
+  --btn-hover-color: #f3d250;
+  --light-font-color: #ececec;
+  --dark-font-color: #363636;
+  --main-bg-color: #5da2d5;
+  --box-shadow-color: 2px 4px rgba(0, 0, 0, 0.2);
+  --item-bg-color: #f78888;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +44,13 @@ main {
 }
 
 header {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   padding: 20px;
   text-align: center;
+  color: var(--light-font-color);
 }
 
-.expertFinderDiv {
+.finder-parent {
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -47,11 +58,14 @@ header {
   width: 90%;
   /* background-color: white; */
   /* background: rgb(243, 219, 154); */
-  background: linear-gradient(
+  background: var(--main-bg-color);
+  box-shadow: var(--box-shadow-color);
+  /* background: linear-gradient(
     to right bottom,
     rgba(105, 105, 255, 0.5),
     rgba(155, 155, 255, 0.3)
   );
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2); */
   /* background-image: linear-gradient(120deg, #99a9f1, #a0a09b); */
   font-family: "Merriweather", serif;
   /* padding: 0.5rem; */
@@ -85,13 +99,14 @@ header {
   outline: none;
   text-align: center;
   /* padding: 12px 16px; */
-  background-color: #e1e1e1;
+  background: var(--btn-bgcolor);
+  /* background-color: #e1e1e1; */
   color: #333;
   cursor: pointer;
   padding: 2px;
   margin: 2px;
   line-height: 2;
-  font-size: 12px;
+  font-size: 0.9em;
   border-radius: 10px;
   /* z-index: 4; */
   /* font-family: sans-serif; */
@@ -108,21 +123,27 @@ header {
 
 /* mouse over button */
 .btn:hover {
-  background-color: rgb(233, 236, 46);
+  background: var(--btn-hover-color);
+  /* background-color: rgb(233, 236, 46); */
   /* color: white; */
 }
 .btn:focus {
-  background-color: #666;
-  color: yellow;
+  background-color: var(--dark-font-color);
+  color: var(--btn-hover-color);
 }
 /* active button */
 .btn:active {
-  background-color: #666;
+  background-color: var(--dark-font-color);
+  color: white;
+}
+
+.btn.active {
+  background-color: var(--dark-font-color);
   color: white;
 }
 
 /* for phones */
-.rsrchrContainer {
+.items-parent {
   margin: auto;
   padding: 10px;
   overflow: hidden;
@@ -140,15 +161,19 @@ header {
   box-sizing: border-box;
   /* border-style: dashed; */
 }
-.rsrchrDiv {
-  background: linear-gradient(
+.item {
+  /* background: linear-gradient(
     40deg,
     rgba(17, 28, 73, 0.5),
     rgba(70, 22, 88, 0.75)
-  );
-  color: #ffffff;
+  ); */
+  background: var(--item-bg-color);
+  color: var(--light-font-color);
+  box-shadow: var(--box-shadow-color);
+  /* color: #ffffff; */
   /* width: 100%; */
   flex: 1;
+  /* font-size: 1.1em; */
   /* height: 20vmin; */
   /* max-width: 45%; */
   /* line-height: 80px; */
@@ -168,30 +193,30 @@ header {
 
 /* for desktop */
 @media only screen and (min-width: 800px) {
-  .rsrchrContainer {
+  .items-parent {
     /* display: flex; */
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     /* justify-content: inherit; */
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .rsrchrDiv {
+  .item {
     /* padding: 5px 10px 5px 10px; */
     margin: 5px 10px;
   }
 }
 /* for phone in landscape mode */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
-  .rsrchrContainer {
+@media only screen and (orientation: landscape) {
+  .items-parent {
     /* display: flex; */
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     /* justify-content: inherit; */
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .rsrchrDiv {
+  .item {
     /* padding: 5px 10px 5px 10px; */
     margin: 5px 10px;
   }
@@ -206,18 +231,18 @@ header {
 
 /* for desktop */
 /* @media only screen and (min-width: 800px) {
-  .rsrchrDiv {
+  .item {
     width: 45%;
   }
 } */
 
-.rsrchrDiv:hover {
+.item:hover {
   font-weight: bold;
-  background: rgb(1, 16, 151);
-  color: rgb(245, 243, 120);
+  background: var(--btn-hover-color);
+  color: black;
 }
 
-/* .rsrchrDiv a:hover {
+/* .item a:hover {
   font-weight: bold;
 } */
 
@@ -276,12 +301,14 @@ a:active {
   border: none;
   outline: none;
   /* padding: 12px 16px; */
-  background-color: #533636;
-  color: white;
+  /* background-color: #533636; */
+  background: var(--btn-bgcolor);
+  box-shadow: var(--box-shadow-color);
+  color: var(--dark-font-color);
   cursor: pointer;
   padding: 0.5rem;
   /* margin: 20px 20px 20px 20px; */
-  font-size: 0.8rem;
+  font-size: 0.8em;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
@@ -290,8 +317,8 @@ a:active {
 }
 
 .btn_info:hover {
-  background-color: yellow;
-  color: #333;
+  background-color: var(--btn-hover-color);
+  color: var(--dark-font-color);
 }
 
 .cluster_info {
@@ -316,13 +343,13 @@ a:active {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   z-index: 4;
-  border-style: solid;
+  /* border-style: solid; */
 }
 
 footer {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   background: inherit;
   padding: 20px;
 }
