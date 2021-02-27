@@ -168,7 +168,7 @@ header {
     rgba(70, 22, 88, 0.75)
   ); */
   background: var(--item-bg-color);
-  color: var(--light-font-color);
+  color: var(--dark-font-color);
   box-shadow: var(--box-shadow-color);
   /* color: #ffffff; */
   /* width: 100%; */
