@@ -3,7 +3,6 @@
 // version 1.0 // Aug 2020
 
 // selectors
-// Add active class to the current button (highlight it)
 var categoryContainer = document.getElementById("categoryContainer");
 var btns = categoryContainer.getElementsByClassName("btn");
 var btnInfo = document.getElementById("btn_info");
@@ -12,7 +11,6 @@ var clusterInfo = document.getElementById("cluster_info");
 // console.log(btnInfo.innerText);
 
 // event listeners
-// add active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
@@ -25,7 +23,7 @@ for (var i = 0; i < btns.length; i++) {
 nefFilterSelect("all");
 
 function nefFilterSelect(c) {
-  var x = document.getElementsByClassName("rsrchrDiv"); // researcher elements
+  var x = document.getElementsByClassName("item"); // researcher elements
   // console.log(c)  // check selected filter
   // console.log(x.length)  // check length of researcher class elements
   if (c == "all") c = ""; // select all
