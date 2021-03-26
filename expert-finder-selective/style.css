@@ -36,10 +36,10 @@ body {
 main {
   min-height: 50vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border-style: solid;
-  border-color: pink; */
+  /* border: 2px pink solid; */
   z-index: 3;
 }
 
@@ -77,8 +77,14 @@ header {
   justify-content: center;
   display: block;
   z-index: 3;
-  /* border-style: solid;
-  border-color: red; */
+  /* border: 2px red solid; */
+}
+
+.switch-version {
+  position: static;
+  text-align: right;
+  margin: 8px 15px;
+  font-family: inherit;
 }
 
 .categoryContainer {
