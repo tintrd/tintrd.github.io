@@ -7,6 +7,7 @@ var categoryContainer = document.getElementById("categoryContainer");
 var btns = categoryContainer.getElementsByClassName("btn");
 var btnInfo = document.getElementById("btn_info");
 var clusterInfo = document.getElementById("cluster_info");
+var lastModifiedSpan = document.getElementById("lastModified");
 
 // console.log(btnInfo.innerText);
 
@@ -63,8 +64,26 @@ function efRemoveClass(element, name) {
 }
 
 function efShowClusterInfo(element, name) {
-  // var x = document.getElementById("cluster_info");
-  if (clusterInfo.style.display === "none") {
+  // var btnInfo = document.getElementById("btn_info");
+  // var clusterInfo = document.getElementById("cluster_info");
+  // var displayStatus = clusterInfo.style.display;
+  // console.log(clusterInfo.style.display);
+  // console.log("btn-info clicked");
+
+  // clusterInfo.classList.toggle("hidden");
+
+  // if ((clusterInfo.style.display === "none") || (clusterInfo.style.display == "")) {
+  //   clusterInfo.style.display = "block";
+  //   btnInfo.innerText = "hide info";
+  // } else if (clusterInfo.style.display === "block") {
+  //   clusterInfo.style.display = "none";
+  //   btnInfo.innerText = "more info";
+  // } else {
+  //   clusterInfo.style.display = "block";
+  //   btnInfo.innerText = "hide info";
+  // }
+
+  if (clusterInfo.style.display === "none" || clusterInfo.style.display == "") {
     clusterInfo.style.display = "block";
     btnInfo.innerText = "hide info";
   } else {
@@ -72,3 +91,7 @@ function efShowClusterInfo(element, name) {
     btnInfo.innerText = "more info";
   }
 }
+
+const lastModified = document.lastModified;
+console.log(`Last Modified Date: ${lastModified}`);
+lastModifiedSpan.innerText = lastModified;
