@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Pridi&display=swap");
 
 :root {
-  --btn-bgcolor: #90ccf4;
+  --btn-bgcolor: #9dd2f5;
+  /* --btn-bgcolor: #90ccf4; */
   --btn-hover-color: #f3d250;
   --light-font-color: #ececec;
   --dark-font-color: #363636;
-  --main-bg-color: #5da2d5;
+  --main-bg-color: #35668b;
+  /* --main-bg-color: #5da2d5; */
   --box-shadow-color: 2px 4px rgba(0, 0, 0, 0.2);
-  --item-bg-color: #f78888;
+  --item-bg-color: #c5a171;
+  /* --item-bg-color: #f78888; */
 }
 
 * {
