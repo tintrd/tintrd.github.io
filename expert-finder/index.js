@@ -1,6 +1,6 @@
 // nuclear expert finder (NEF)
 // filter researchers by research field
-// version 1.0 // Aug 2020
+// first created Aug 2020
 
 // selectors
 var categoryContainer = document.getElementById("categoryContainer");
